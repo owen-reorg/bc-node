@@ -67,14 +67,14 @@ $ bnbcli
 This command will generate a keypair for your node and create the genesis block config:
 
 ```bash
-$ bnbchaind init
+$ bnbchaind init --moniker ${YOURNAME}
 $ cat ~/.bnbchaind/config/genesis.json
 ```
 
 You may want to check the [Issuing assets](#issuing-assets) section below before you start, but this is how to start the node and begin generating blocks:
 
 ```bash
-$ bnbchaind start --moniker ${YOURNAME}
+$ bnbchaind start
 ```
 
 If everything worked you will see blocks being generated around every 1s in your console.
